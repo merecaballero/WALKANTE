@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WALKANTE Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img src="../images/logo.png" alt="Logo WALKANTE" title="Logo WALKANTE" height="100" width="150">
+        </figure>        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuestos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Contacto</h1>
+            <p>Puedes contactarnos aquí:</p>
+        </div>
+        <!--Formulario de contacto-->
+        <div class="formulario">
+            <form action="formulariocorrecto.html">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escriba su email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="titulo">
+            <h2>Ubicación</h2>
+        </div>
+        <!--Se añade un mapa de google maps con la ubicacion-->
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.147539102019!2d-0.4897587243212845!3d38.34556707907623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237b2c697ec0b%3A0xe1b1dee30b3a6bec!2sC.%20del%20Teatro%2C%2028%2C%2003001%20Alicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1725906642698!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>Nos encontramos en: Calle del Teatro, 28, Alicante</p>
+        <p>Redes Sociales:</p>
+        <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook" height="30" width="30"></a>
+        <a href="https://x.com" target="_blank"><img src="../images/x.png" alt="X" height="30" width="30"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram" height="30" width="30"></a>
+        <p><a href="aviso_legal.html">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

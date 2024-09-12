@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WALKANTE Presupuesto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img src="../images/logo.png" alt="Logo WALKANTE" title="Logo WALKANTE" height="100" width="150">
+        </figure>    
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuestos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Solicita tu presupuesto</h1>
+        </div>
+        <div class="formulario">
+            <!--Formulario para pedir el presupuesto-->
+            <form action="formulariocorrecto.html"> <!--Al enviar el formulario, si todo es correcto nos envia a la pagina de formulario correcto-->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escriba su email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escriba su telefono" required>
+                <label for="producto">Producto de interés:</label>
+                <select id="producto" name="producto" size="1">
+                    <option value="no-select">Seleccione un producto</option>
+                    <option value="tabla_1">Tabla principiantes OHA</option>
+                    <option value="tabla_2">Tabla mediana LUNA</option>
+                    <option value="tabla_3">Tabla Fast FISKON</option>
+                </select>
+                <label for="mensaje">Solicite más información:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su consulta" required></textarea>        
+                <!--El checkpoint lo creamos de esta manera para que al hacer click sobre el texto de 'Acepto la politica...'
+                se marque el checkpoint de manera automatica-->
+                <label><input type="checkbox" id="condiciones" name="condiciones" required> 
+                    Acepto la <a href="politica_privacidad.html">política de privacidad</a>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Nos encontramos en: Calle del Teatro, 28, Alicante</p>
+        <p>Redes Sociales:</p>
+        <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook" height="30" width="30"></a>
+        <a href="https://x.com" target="_blank"><img src="../images/x.png" alt="X" height="30" width="30"></a>
+        <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram" height="30" width="30"></a>
+        <p><a href="aviso_legal.html">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

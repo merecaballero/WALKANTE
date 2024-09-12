@@ -1,0 +1,171 @@
+/*Hoja de estilo CSS*/
+/*Asignamos las caracteristicas generales del contenido de la pagina*/
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #f4f4f4;
+}
+
+/*Asignamos las caracteristicas generales del encabezado*/
+header {
+    background-color: rgb(72, 221, 255);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/*Asignamos las caracteristicas al menu de navegacion*/
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /*para que el menu de navegacion quede en la misma linea*/
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Para indicar en que página nos encontramos dentro de la barra de navegación*/
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Asignamos las caracteristicas al main, donde se encuentra el contenido*/
+main{
+    margin: 40px; /*Se establece un margen de 40 pixeles para tener una visualizacion limpia de la pagina*/
+}
+
+main img {
+    height: 250px; /*Las imagenes que encontremos en el main de la pagina tendran una altura de 250 pixeles (ej. index.html)*/
+}
+
+section {
+    padding: 20px 70px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.titulo{ /*Los elementos marcados como clase 'titulo' estan alineados en el centro*/
+    text-align: center; 
+}
+
+.parrafo{ /*Los elementos marcados como clase 'parrafo' estan justificados a derecha e izquierda*/
+    text-align: justify;
+}
+
+.boton-inicio{
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: rgb(239, 237, 237); /* Color de fondo del botón */
+    color: black; /* Color del texto */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 2px; /* Bordes redondeados para el botón */
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: #a5a5a5; /* Cambio de color al pasar el ratón por encima */
+}
+
+
+.imagen{ /*Los elementos marcados como clase 'imagen' estan alineados en el centro*/
+    text-align: center;
+}
+
+.mapa{ /*Los elementos marcados como clase 'mapa' estan alineados en el centro*/
+    text-align: center;
+}
+
+/* Estilo general para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 15px;
+    justify-items: center; /* Centra las imágenes horizontalmente */
+}
+
+/* Estilo para las imágenes */
+.gallery img {
+    width: 100%; /* Ocuparán todo el ancho del contenedor (el de 300px definido en el HTML) */
+    height: 100%; /* Forzamos que ocupen la altura definida en el HTML (300px) */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y se recorte si es necesario */
+}
+
+figure img{ /*Se establece la altuea de las imagenes indicadas como figure*/
+    height: 150px;
+}
+
+figure figcaption{ /*Se establece que los pies de foto se alinean en el centro de la imagen*/
+    text-align: center;
+}
+
+/*Se establecen las condiciones generales para los formularios*/
+form { 
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label { 
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input, 
+textarea, 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+input[type="checkbox"]{
+    width:13px;
+}
+
+/*Se establece la estetica de los botones que encontraremos en la pagina web*/
+button{
+    width:400px;
+    height:50px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*Asignamos las caracteristicas al footer o pie de página*/
+footer {
+    background-color: rgb(72, 221, 255);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Marcamos el tamaño de las imagenes encontradas en el pie de pagina, los logos de las redes sociales*/
+footer img {
+    height: 30px;
+    margin-left: 10px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--Publicado en : https://merecaballero.github.io/walkante/-->
+<html lang="es"> <!--Se establece que el lenguaje del html es español-->
+<!--Head es la primera parte del documentO HTML, se establecen en el la informacion acerca del documento-->
+<head>
+    <meta charset="UTF-8"> 
+    <title>WALKANTE Inicio</title> <!--Titulo que se muestra en la linea de navegacion-->
+    <link rel="stylesheet" href="css/style.css"> <!--Conexion con la hoja de estilo CSS-->
+</head>
+<!--Body es la segunda parte del documento, la parte "visible". La vamos a dividir por lo general en tres partes
+header (encabezado), main (principal) y footer (pie de pagina)-->
+<body>
+    <header> 
+        <!--Logo de la empresa-->
+        <figure class="logo">
+            <img src="images/logo.png" alt="Logo WALKANTE" title="Logo WALKANTE" height="100" width="150">
+        </figure>
+        <!--Panel de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="views/productos.html">Galeria</a></li>
+                <li><a href="views/presupuesto.html">Presupuestos</a></li>
+                <li><a href="views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Hemos dividido el main en contenedores div para establecer de una manera mas facil y efectiva
+        las caracteristicas visuales de cada parte de la pagina-->
+        <section id="intro">
+            <div class="titulo">
+                <h1>Bienvenido a WALKANTE</h1>
+                <h4>
+                    Pioneros en material de surf, calidad e innovación para tus sesiones
+                </h4>
+            </div>
+            <div class="parrafo">
+                <p>
+                    Bienvenidos a WALKANTE, el destino perfecto para todos los amantes del surf. Nos especializamos en 
+                    la venta de tablas de surf diseñadas para mejorar tu experiencia en las olas de la Costa Blanca. Ya seas 
+                    principiante o surfista experimentado, aquí encontrarás una amplia variedad de tablas, desde modelos clásicos 
+                    hasta los más innovadores, creados para ofrecerte rendimiento, estabilidad y diversión en cada ola. Nuestro 
+                    equipo de expertos está listo para ayudarte a encontrar la tabla que mejor se adapte a tu estilo y nivel de surf.
+                </p>
+            </div>
+            <div class="imagen">
+                <img src="images/index.jpg" alt="surf" height="250" width="444">
+            </div>
+            <div class="parrafo">
+                <p>
+                    Ubicados en el corazón de Alicante, no solo ofrecemos productos de la más alta calidad, sino que también 
+                    compartimos nuestra pasión por el mar. Nos enorgullece colaborar con las mejores marcas y fabricantes del 
+                    mercado, asegurando que cada tabla cumpla con los más altos estándares de calidad. Visítanos y descubre cómo 
+                    podemos ayudarte a disfrutar al máximo de las olas alicantinas. ¡Siente la energía del Mediterráneo con WALKANTE!
+                </p>
+            </div>
+        </section>
+        <section id="sobre-nosotros">
+            <div class="titulo">
+                <h2>Sobre nosotros</h2>
+            </div>
+            <div class="parrafo">
+                <p>
+                    En WALKANTE, somos más que una tienda de surf; somos una comunidad apasionada por las olas y el estilo de vida que el 
+                    surf representa. Desde nuestros inicios, nos hemos comprometido a ofrecer productos que reflejen nuestra dedicación a la 
+                    calidad, la innovación y el respeto por el océano. Nos enorgullece ser pioneros en la Costa Blanca en proporcionar material 
+                    de surf de alta gama, adaptado tanto para principiantes como para surfistas experimentados. Nuestra misión es ayudarte a 
+                    mejorar cada sesión, con el equipo adecuado y la atención personalizada de nuestro equipo de expertos que comparten tu 
+                    amor por el mar.
+                </p>
+            </div>
+        </section>
+        <section id="nuestros-servicios">
+            <div class="titulo">
+                <h2>Nuestros servicios</h2>
+            </div>
+            <div class="parrafo">
+                <p>
+                    En WALKANTE, nos especializamos en mucho más que la venta de tablas de surf. Ofrecemos un servicio integral que incluye 
+                    asesoramiento personalizado para elegir la tabla perfecta según tu nivel y estilo de surf, mantenimiento y reparación de tablas, 
+                    y la oportunidad de probar nuestros últimos modelos antes de tomar una decisión. Además, organizamos eventos y clínicas de surf 
+                    para mantener viva la comunidad y ayudar a los surfistas de todos los niveles a mejorar sus habilidades. Con nosotros, cada visita 
+                    es una oportunidad para mejorar tu experiencia en las olas, con la mejor calidad y atención garantizadas.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!--En el pie de pagina establecemos la calle donde se ubica nuestro negocio, el logotipo de redes sociales que nos redirigen
+    a la pagina web de estas y un link al aviso legal de nuestra pagina web-->
+    <footer>
+        <p>Nos encontramos en: Calle del Teatro, 28, Alicante</p>
+        <p>Redes Sociales:</p>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" height="30" width="30"></a>
+        <a href="https://x.com" target="_blank"><img src="images/x.png" alt="X" height="30" width="30"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" height="30" width="30"></a>
+        <p><a href="views/aviso_legal.html">Aviso legal</a></p>
+    </footer>
+</body> 
+</html>
